@@ -1,0 +1,29 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "jsx": "react",
+        "baseUrl": "src",
+        "declaration": false,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "noEmit": true,
+        "sourceMap": true,
+        "target": "es5",
+        "skipLibCheck": true,
+        "typeRoots": ["node_modules/@types", "src/types"],
+        "paths": {
+          "@images/*": ["assets/images/*"],
+        },
+        "plugins": [{
+            "name": "typescript-plugin-css-modules",
+            "options": {
+              "customMatcher": "\\.(c|sa|sc)ss$",
+              "classnameTransform": "camelCase"
+            }
+          }]
+    }
+}
